@@ -26,12 +26,19 @@ Creating Gate way end points are easy and fast.
 
 Simple .
 
-Interface Endpoints can be used to connect to other AWS services or to other VPC in the same region.
+Interface Endpoints can be used to connect to other AWS services or to other VPC in the same region privately.
 
 
 
 <img width="301" alt="image" src="https://github.com/KORLA2/AWS-SERVICES/assets/96729391/944baf48-77f7-4940-9547-5685c7aaf7c3">
 
+VPC interface endpoint when created will create an ENI per subnet in the VPC for you. It will also provide you a DNS name per each AZ and a global name that you can use within your applications.
+
+In addition it supports the ability to have the AWS service domain name for the VPC interface endpoint be resolvable to the private IPs of the endpoint. As long as your VPC has DNS enabled it will first check the VPC private DNS resolver and then resolve it to the private IP rather than the public one.
+
+
+
+From the AWS side this is just an ENI created in your AWS VPC that is connected to one of AWS internal VPCs. It's actually possible to implement this for your own services too to share with another organisations VPCs, this is implemented using AWS PrivateLink.
 
 
 
