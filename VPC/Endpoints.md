@@ -1,4 +1,4 @@
-Endpoints are used  to privately communicate to other aws services without internet, instead of using nat gateways end points are secure.
+VPC Endpoints are used  to privately communicate to other aws services in the same region  without internet, instead of using nat gateways end points are secure.
 
 When we want to connect to other AWS services from EC2(or any other service) as both are AWS services instead of allowing traffic to flow from public internet, traffic can also flow privately with in AWS LAN connections. 
 
@@ -15,7 +15,25 @@ There are 3 types of endpoints:
 
 Basically endpoints connect to  one AWS service , now we have to connect  the service we want to communicate  to , to end points , and traffic stays within AWS.
 
-Gate Way end points are only for S3 and DynamoDB.
+GateWay end points are only for S3 and DynamoDB.
 
-1. Create gateway endpoint for S3 and mention the VPC and subnet
+Creating Gate way end points are easy and fast.
+
+1. Create gateway endpoint for S3 and mention the VPC and subnet where private server is present.
+
+2. AWS automatically adds a route to S3 to private subnet router so that when ever S3 request was made in private server using routes present router knows where to forward 
+   the request.  
+
+Simple .
+
+Interface Endpoints can be used to connect to other AWS services or to other VPC in the same region.
+
+
+
+<img width="301" alt="image" src="https://github.com/KORLA2/AWS-SERVICES/assets/96729391/944baf48-77f7-4940-9547-5685c7aaf7c3">
+
+
+
+
+  
 
