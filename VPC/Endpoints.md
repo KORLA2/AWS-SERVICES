@@ -64,5 +64,5 @@ Instead of creating a server in public subnet and ssh to public and then to priv
 
 ![image](https://github.com/KORLA2/AWS-SERVICES/assets/96729391/39e1eaf9-fa71-4bac-afc5-4c33e52cb67b)
 
-So while testing we have to mention the endpoint url which is DNS name of the end point in the subnet ( which is after https://bucket. ) if not mentioned ec2 treates the traffic has to flow according to routes in route table.
+So while testing we have to mention the endpoint url which is DNS name of the end point in the subnet ( which is after ``` https://bucket. ```) if not mentioned ec2 treates the traffic has to flow according to routes in route table.
 
