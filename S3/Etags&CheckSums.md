@@ -14,3 +14,16 @@
 - If the data is downloaded and manipulated or lost checksum determines it. 
 
 - Algorithms like MD5, SHA-256, or CRC32 generate a checksum from the data in a file
+
+Etags are for our reference and Checksums are for AWS reference whether or not the data in the Object has changed or not.
+
+### How to get the Etags for a Object in the Bucket.
+
+```
+![image](https://github.com/user-attachments/assets/16bc8c38-1c8b-480e-9551-574c361414db)
+
+
+```
+
+
+
