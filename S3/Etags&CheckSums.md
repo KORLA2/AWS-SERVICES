@@ -19,11 +19,10 @@ Etags are for our reference and Checksums are for AWS reference whether or not t
 
 ### How to get the Etags for a Object in the Bucket.
 
-```
 ![image](https://github.com/user-attachments/assets/16bc8c38-1c8b-480e-9551-574c361414db)
 
 
-```
+
 
 
 
